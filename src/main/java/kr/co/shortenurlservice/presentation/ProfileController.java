@@ -20,6 +20,6 @@ public class ProfileController {
 
     @GetMapping("/profile")
     public String getActiveProfile() {
-        return "현재 활성화된 프로파일123: " + activeProfile + " 사용할 DB: " + databaseAddress;
+        return "현재 활성화된 프로파일1234: " + activeProfile + " 사용할 DB: " + databaseAddress;
     }
 }
