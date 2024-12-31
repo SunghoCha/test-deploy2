@@ -13,6 +13,11 @@ public class ProfileController {
     @Value("${database.address}")
     private String databaseAddress;
 
+    @GetMapping("/")
+    public String home() {
+        return "Hello, World!";
+    }
+
     @GetMapping("/profile")
     public String getActiveProfile() {
         return "현재 활성화된 프로파일123: " + activeProfile + " 사용할 DB: " + databaseAddress;
